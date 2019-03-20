@@ -9,3 +9,14 @@
     浏览器限制的解决方案： 控制台：  open -n /Applications/Google\ Chrome.app/ —args —disable-web-security  —user-data-dir=/Users/smzdm/MyChromeDevUserData/
 
 */
+/*
+1， JSONP 如何解决跨域
+2，JSONP的实现原理
+Type: script
+返回类型： JS脚本
+弊端： 
+1，服务器需要改动代码支持
+2，只支持GET
+3，
+
+*/
