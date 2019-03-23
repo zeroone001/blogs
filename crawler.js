@@ -9,16 +9,24 @@ var event = new EventEmitter();
 
 console.log('cheerio', event);
 //取文件
-var getFile = function (path) {
-    return new Promise(function (resolve, reject) {
-        fs.readFile(path, {flag:'r+', encoding:'utf-8'}, function (err, file) {
+var getFile = path => {
+    console.log('qu wen jian');
+    return new Promise((resolve, reject) => {
+        fs.readFile(path, {flag: 'r+', encoding: 'utf-8'}, (err, file) => {
             if (err) {
                 reject('read ' + path + ' failed');
             } else {
+                // console.log('getFile', file);
                 resolve(file);
             }
-            
         });
+        // fs.readFile(__dirname + '/querystring.js', {encoding: 'utf-8'}, (err, file) => {
+        //     if (err) {
+        //         console.log(err);
+        //     } else {
+        //         console.log('file', file);
+        //     }
+        // });
     });
 };
 //写文件
@@ -100,7 +108,7 @@ var start = function () {
     var torrentId = '1';
 
     getFile(config.countPath)
-    .then(function (countFile) {
+    .then((countFile) => {
         var reg = new RegExp('(?:' + config.torrentSerie + ':)\\d+');
         if (countFile.match(reg)) {
             var match = countFile.match(reg)[0];
@@ -120,7 +128,7 @@ var start = function () {
             return Promise.reject('can not parse count file correct');
         }
         
-    }, function (res) {
+    }, (res) => {
         console.log(res);
         return res;
     })
