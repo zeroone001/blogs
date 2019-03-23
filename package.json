@@ -1,0 +1,23 @@
+{
+  "name": "remind_exercises",
+  "version": "1.0.0",
+  "description": "记录做过的题 ---------",
+  "main": "BST.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zeroone001/remind_exercises.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zeroone001/remind_exercises/issues"
+  },
+  "homepage": "https://github.com/zeroone001/remind_exercises#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "mkdirp": "^0.5.1"
+  }
+}
