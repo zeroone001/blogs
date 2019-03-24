@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>animation</title>
+    <style>
+        .parent {
+            width: 200px;
+            background-color: yellow;
+            height: 100px;
+        }
+        .parent:hover {
+            background-color: red;
+            width: 100px;
+            /* 属性，间隔，曲线，延迟 */
+            transition: margin-right 6s ease-in-out .5s;
+        }
+        .p-animation {
+            background-color: black;
+            width: 100%;
+            height: 25px;
+            overflow: hidden;
+        }
+        .text {
+            color: white;
+            font-size: 14px;
+            margin-right: 2%;
+            float: left;
+        }
+        @keyframes eye {
+                from {margin-left: -10%;} to {margin-left: 100%;}
+            }
+        .eye {
+            background-color: red;
+            background-image: linear-gradient(to right, rgb(0, 0, 0, 0.9) 25%, rgba(0,0,0, 0.1) 50%, rgba(0,0,0, 0.9) 75%);
+            width: 10%;
+            height: 100%;
+            -webkit-animation: eye 4s linear 0s infinite alternate;
+            /* animation:  */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+    </div>
+
+    <div class="p-animation">
+        <div class="text">我是颜文字</div>
+        <div class="eye"></div>
+    </div>
+
+</body>
+</html>
