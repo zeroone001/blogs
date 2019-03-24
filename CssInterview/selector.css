@@ -1,0 +1,48 @@
+/* 
+    选择器的优先级
+
+    !important > #id > .class > tag > * > 继承 > 默认
+
+    清除浮动：
+    :after {
+        clear: both;
+    }
+
+    父元素： overflow: hidden; display: table;
+    父级设置高度
+
+
+ */
+ /* 
+
+    link 与 @import 的区别
+    link 可以定义rel和定义RSS @import只能用于加载CSS
+    解析到link的时候，页面会同步加载；但是@import会等到页面加载完，再加载
+    @import需要IE5以上才能用
+    link可以用JS动态引入；@import不行
+  */
+
+/* 
+ CSS预处理器
+
+SASS，LESS， POSTCSS
+功能：
+嵌套；
+变量；
+循环语句；
+条件语句；
+自动前缀；
+单位转换；
+mixin复用
+
+ */
+
+
+ /* 
+
+
+  */
+
+
+
+
