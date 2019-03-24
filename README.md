@@ -5,4 +5,5 @@
 * arr_api.js: 一些数组API的应用
 * CrossDomain: 跨域相关
 * CssInterview: CSS 样式面试相关
+* JSInterview: JS 面试相关题
 
