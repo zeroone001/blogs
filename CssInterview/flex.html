@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS布局-flex</title>
+    <link rel="stylesheet" href="./center.css"> 
+    <style>
+        .parent {
+            width: 100px;
+            height: 100px;
+            background: yellow;
+            border: 1px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .children {
+            background-color: red;
+            width: 50px;
+            height: 10px;
+            /* justify-content: center; */
+        }
+    </style>  
+</head>
+<body>
+    <div class="parent">
+        <div class="children"></div>
+    </div>
+</body>
+</html>

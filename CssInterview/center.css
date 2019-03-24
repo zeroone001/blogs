@@ -1,0 +1,14 @@
+/* 水平居中 */
+/* 
+    行内元素： text-align: center;
+    块级元素： margin: 0 auto;
+    absolute + transform
+    flex + justify-content: center; 要设置在父元素上
+ */
+ /* 
+    垂直居中
+    line-height: height;
+    absolute + transform
+    flex + align-items: center;
+    table
+ */

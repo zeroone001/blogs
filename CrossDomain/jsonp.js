@@ -18,5 +18,49 @@ Type: script
 1，服务器需要改动代码支持
 2，只支持GET
 3，
+*/
+/*
+    简单请求&非简单请求
+
+    OPTIONS预检命令
+    
+
 
 */
+
+/*
+    Access-control-allow-origin: '*'
+    服务器解决跨域
+*/
+/*
+    带cookie的跨域
+    允许携带cookie
+    带cookie的时候，origin必须是全匹配，不能是*
+    Filter解决，判断request里面的origin，然后设置就好了
+*/
+$.ajax({
+    xhrFields: {
+        withCredentials: true
+    } 
+});
+
+/*
+
+nginx
+启动
+start nginx
+
+nginx -s reload
+
+nginx -s stop
+
+*/
+
+
+
+
+
+
+
+
+
