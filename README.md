@@ -6,4 +6,6 @@
 * CrossDomain: 跨域相关
 * CssInterview: CSS 样式面试相关
 * JSInterview: JS 面试相关题
+* VueInterview: Vue 面试相关
+* Git: git相关
 
