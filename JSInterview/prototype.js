@@ -51,6 +51,7 @@ var foo = function () {
 }()) */
 /*
     闭包：
+    是函数和生命该函数的词法环境的组合；
     闭包属于一种特殊的作用域，叫静态作用域，
     可以理解为：父函数被销毁的情况下，返回出的子函数的scope中仍然保留着
     单变量对象和作用域链，因此可以继续访问到父级的变量对象，
@@ -61,10 +62,42 @@ var foo = function () {
     解决：
     可以用函数参数的传入的方式解决；
     可以用setTimeout()
-    使用块级作用域，让变量成为自己上下文的属性； 
+    使用块级作用域，让变量成为自己上下文的属性, 也就是let
+    
+    在循环中创建闭包，ES2015，let出现之前的一个常见的问题：
+
 
 */
+function showHelp(help) {
+  document.getElementById('help').innerHTML = help;
+}
 
+function setupHelp() {
+  var helpText = [
+      {'id': 'email', 'help': 'Your e-mail address'},
+      {'id': 'name', 'help': 'Your full name'},
+      {'id': 'age', 'help': 'Your age (you must be over 16)'}
+    ];
+
+  for (var i = 0; i < helpText.length; i++) {
+    var item = helpText[i];
+    document.getElementById(item.id).onfocus = function() {
+      showHelp(item.help);
+    }
+
+  }
+}
+setupHelp();
+
+function f_bibao(argument) {
+    // body...
+    var f = 1;
+    function private_f(argument) {
+        console.log('f', f);
+    }
+    return private_f;
+}
+f_bibao();
 
 
 
