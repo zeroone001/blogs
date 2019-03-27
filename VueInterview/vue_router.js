@@ -1,4 +1,7 @@
 /*
+    https://router.vuejs.org/zh/api/#router-link
+*/
+/*
     mode:
         hash
         history

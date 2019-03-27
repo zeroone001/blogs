@@ -19,5 +19,25 @@
 
 */
 /*
+    1, v-if v-show 区别？
+        v-if是条件渲染，按照条件判断是否渲染，v-show是display的block或者none；
+    2, Vue的核心？
+        数据驱动，组件系统
+    3, v-on 可以绑定多个方法吗？
+        可以的；
+    4, key的作用：
+        更高效的渲染虚拟DOM 
+    $route和$router的区别?
+        $route 是路由信息对象，包含，path, name, query, hash, matched;
+        
+        $router是路由实例， 包含了路由的跳转方法和钩子函数；
+        常用： this.$router.push() 用来跳转；this.$router.go(-1);
+
     
+
+
+
+
+
+
 */
