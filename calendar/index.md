@@ -21,6 +21,7 @@
 * detail-page add exposure
 ### 3.26
 * 身份证
-* 
+* 线上bug
+* 明天休息一天
 
 
