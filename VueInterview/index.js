@@ -27,7 +27,19 @@ update：
     vm.$off(): 解绑监听
     destroyed: 完成后触发钩子
 */
-
+/*
+    Proxy相比于defineProperty的优势
+    数组变化也能够监听到；
+    不需要深度遍历监听
+*/
+let data = {a:1};
+let reactiveData = new Proxy(data, {
+    get (target, name) {
+        console.log(target); // {a:1}
+        console.log(name);  // a
+        return target.name;
+    }
+});
 
 
 

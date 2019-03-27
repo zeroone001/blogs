@@ -52,6 +52,7 @@
             console.log(`${key}更新${newVal}`);
             if (value !== newVal) {
               value = newVal;
+              // 更新DOM结构的
               binding._directives.forEach(function (item) {
                 item.update();
               })
