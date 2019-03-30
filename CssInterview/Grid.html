@@ -4,11 +4,58 @@
     <meta charset="UTF-8">
     <title>Grid布局</title>
     <style>
-        
+        .container {
+            display: grid;
+            width: 300px;
+            /* height: 150px; */
+            grid-template-columns: repeat(auto-fill, 100px);
+            grid-template-rows: repeat(4, 50px);
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            justify-items: center;
+        }
+        .container>div {
+            /* display: inline-grid; */
+        }
+        .main {
+            width: 50px;
+            /* display: inline-grid; */
+            background-color: red;
+        }
+        .main1 {
+            width: 50px;
+            /* display: inline-grid; */
+            background-color: black;
+            grid-column: 2/3;
+        }
+        .sub {
+            width: 50px;
+            background-color: blue;
+        }
+        .extra {
+            width: 50px;
+            background-color: yellow;
+        }
     </style>
 </head>
 <body>
+    <!-- http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html -->
+    <!-- 
+        1,Grid 布局也叫网格布局，是最强大的CSS布局方案；
+        可以讲网页划分成一个个不同的网格，任意组合不同的网格；
+        Grid布局跟flex有一定的相似性
+        2, 单元格
+        3，网格线
+        4，定义在容器上面称为容器属性，定义在项目上面称为项目属性
+        5，display: grid; 指定容器使用网格布局
+        6，
+        
+
+     -->
     <div class="container">
+      <div class="main1"></div>
+      <div class="sub"></div>
+      <div class="extra"></div>
       <div class="main"></div>
       <div class="sub"></div>
       <div class="extra"></div>
