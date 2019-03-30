@@ -20,9 +20,38 @@
             height: 10px;
             /* justify-content: center; */
         }
+        .container {
+            display: flex;
+            flex-direction: row;
+            height: 50px;
+        }
+        .main { 
+            width: 20%;
+            height: 100%;
+            order: 2;
+            border: 1px solid #000;
+        }
+        .sub {
+            width: 50%;
+            height: 100%;
+            order: 1;
+            border: 1px solid #000;
+        }
+        .extra {
+            width: 30%;
+            height: 100%;
+            order: 3;
+            border: 1px solid #000;
+        }
     </style>  
 </head>
 <body>
+    <!-- flex order -->
+    <div class="container">
+      <div class="main">main</div>
+      <div class="sub">sub</div>
+      <div class="extra">extra</div>
+    </div>
     <div class="parent">
         <div class="children"></div>
     </div>

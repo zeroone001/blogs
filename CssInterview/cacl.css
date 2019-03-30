@@ -1,0 +1,11 @@
+/* 
+    https://developer.mozilla.org/zh-CN/docs/Web/CSS/calc
+*/
+/* 使用指定的外边距定位一个对象 */
+.banner {
+    left: calc(40px);
+    width: calc(100% - 80px);
+}
+
+
+

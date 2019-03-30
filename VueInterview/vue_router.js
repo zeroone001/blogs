@@ -11,3 +11,7 @@
     占位：
         <router-view></router-view>
 */
+
+router.beforeEach((to, from ,next) => {
+    
+});

@@ -1,18 +1,8 @@
 # NOTES
-    汇总知识点
-## File Directory
-* nodePractice: 一些node练习
-* arr_api.js: 一些数组API的应用
-* CrossDomain: 跨域相关
-* CssInterview: CSS 样式面试相关
-* JSInterview: JS 面试相关题
-* VueInterview: Vue 面试相关
-* Git: git相关
-* Question: Daily-Question
-
+    😊
 ## 知识点结构
 ### Questions - ./Question/index.js
-
+* some questions
 ### CSS - ./CssInterview/
 * 盒模型
 * BFC
@@ -53,6 +43,7 @@
 * 递归运用
 * 数据树
 * 天平找次品
+## OverView
 
 
 
