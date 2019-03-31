@@ -2,6 +2,14 @@
     实现子元素的水平垂直居中？
     https://juejin.im/post/5c83f7d15188257e566edcf1?utm_medium=hao.caibaojian.com&utm_source=hao.caibaojian.com
 */
+/*
+    1, display: grid; justify-self: center;
+    align-self: center;
+    2, line-height: 1;,text-align: center;
+    3, dispaly: table; display:table-cell; vertical-
+    
+
+*/
 
 
 /*
@@ -13,7 +21,10 @@
     </div>
     A: 
     1，浮动
-    2， flex 布局
+    2，flex 布局
+    3, display: grid; grid-column: 2/3;
+
+
 */
 
 
