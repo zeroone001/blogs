@@ -34,6 +34,30 @@ console.log(+false) // 0
 console.log(+true) // 1
 console.log(1 + '2' + 3 + '4') // '1234' 遇到字符串就会拼接
 console.log(4 + 3 + 2 + '1') // '91' 先加在一起最后拼接
+/*
+    Q: 运行下面代码输出什么？
+
+*/
+var x = 3;
+var foo = {
+    x: 1,
+    baz: {
+        x: 2,
+        bar: function (argument) {
+            // body...
+            return this.x;
+        }
+    }
+}
+var go = foo.baz.bar;
+// 在非严格模式下是3，在严格模式下是undefined
+// node 默认是严格模式？
+console.log(go()); // 3
+console.log(foo.baz.bar()); // 2
+
+
+
+
 
 
 
