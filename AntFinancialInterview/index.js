@@ -7,7 +7,7 @@
     align-self: center;
     2, line-height: 1;,text-align: center;
     3, dispaly: table; display:table-cell; vertical-
-    
+
 
 */
 
@@ -26,6 +26,16 @@
 
 
 */
+/*
+    Q: 执行下面的代码，输出结果是什么？
+
+*/
+console.log(+false) // 0
+console.log(+true) // 1
+console.log(1 + '2' + 3 + '4') // '1234' 遇到字符串就会拼接
+console.log(4 + 3 + 2 + '1') // '91' 先加在一起最后拼接
+
+
 
 
 
