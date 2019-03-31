@@ -69,6 +69,9 @@ debounce(function () {
 */
 function throttle (fn, wait, immediate) {
     // body...
+    if (typeof fn !== 'function') {
+        throw 'error';
+    }
     let timer = null;
     let nowI = immediate;
     return function () {

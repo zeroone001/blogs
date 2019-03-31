@@ -54,6 +54,85 @@ var go = foo.baz.bar;
 // node 默认是严格模式？
 console.log(go()); // 3
 console.log(foo.baz.bar()); // 2
+/*
+    实现以下函数，使得输入的字符串逆序输出
+    function reverse(str) {
+      let res = str.split('');
+      return res.reverse().join('');
+    }
+
+reverse('hello world!'); // output: '!dlrow olleh'
+
+*/
+// String.prototype.reverse = function () {
+//     // body...
+//     let res = this.split('');
+//     return res.reverse().join('');
+// }
+
+const sleep = (time) => {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log(3);
+            resolve();
+        }, time);
+    });
+}
+(async () => {
+    console.log(1);
+    await sleep(2000);
+    console.log(2);
+})();
+/*
+    函数节流
+*/
+const throFun = () => {
+    console.log('123');
+}
+function throttle (fn, wait, immediate) {
+    // body...
+    if (typeof fn !== 'function') {
+        throw 'error';
+    }
+    let timer = null;
+    let nowI = immediate;
+    return function () {
+        let context = this;
+        let argu = arguments;
+        // body...
+        if (nowI) {
+            fn.apply(context, argu);
+        }
+        if (!timer) {
+            timer = setTimeout(() => {
+                fn.apply(context, argu);
+                clearTimeout(timer)
+            }, wait);
+        }
+    }
+}
+document.addEventListener('scroll', throttle(throFun, 3000)); 
+/*
+    Q:实现debounce函数
+    document.addEventListener('scroll', debounce(throFun, 3000)); 
+
+*/
+function debounce(fun, delay) {
+    var timer = null;
+    return function () {
+        // body...
+        var _this = this;
+        var arg = arguments;
+        if (timer) {
+            clearTimeout(timer);
+        }
+        timer = setTimeout(() => {
+            fun.apply(_this, arg);
+        }, delay);
+    }
+}
+
+
 
 
 
