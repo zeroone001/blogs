@@ -14,7 +14,6 @@
     如果找到一样的，那么就不管这个数，进行下一个，依次与后面的
     进行比较；
 */
-
 function unique(arr) {
     let res = [];
     for (let i = 0; i < arr.length; i++) {
@@ -32,8 +31,15 @@ function unique(arr) {
 }
 unique([1,1,1,3,4]);
 /*
-    
+    方法三： 单层for循环 + indexOf
 */
-
-
-
+function unique1(arr) {
+    // body...
+    var res = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr.indexOf(arr[i]) === i) {
+            res.push(arr[i]);
+        }
+    }
+    return res;
+}
