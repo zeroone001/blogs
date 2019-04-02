@@ -61,7 +61,12 @@ const scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
 $el.remove();
 el.parentNode.removeChild(el);
 // Text
-
+$el.text();
+el.textContent;
+// Html
+$el.html();
+el.innerHtml;
+// Append
 
 
 
