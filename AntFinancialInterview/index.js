@@ -84,7 +84,7 @@ const sleep = (time) => {
     console.log(2);
 })();
 /*
-    函数节流
+    函数节流, 第一次要执行一次
 */
 const throFun = () => {
     console.log('123');
@@ -94,20 +94,19 @@ function throttle (fn, wait, immediate) {
     if (typeof fn !== 'function') {
         throw 'error';
     }
-    let timer = null;
+    let prev = 0;
     let nowI = immediate;
     return function () {
         let context = this;
         let argu = arguments;
-        // body...
+
         if (nowI) {
             fn.apply(context, argu);
         }
-        if (!timer) {
-            timer = setTimeout(() => {
-                fn.apply(context, argu);
-                clearTimeout(timer)
-            }, wait);
+        let now = new Date();
+        if (now - prev >= wait) {
+            fn.apply(context, argu);
+            prev = now;
         }
     }
 }
