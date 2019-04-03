@@ -1,5 +1,6 @@
 /*
     JQ用原生JS来写
+    https://github.com/nefe/You-Dont-Need-jQuery/blob/master/README.zh-CN.md
 */
 /*
     CSS & Style
@@ -66,10 +67,35 @@ el.textContent;
 // Html
 $el.html();
 el.innerHtml;
-// Append
 
+// Append 插入到子字节的末尾
+$el.append();
+// Native (HTML string)
+el.insertAdjacentHTML('beforeend', '<div id="container">Hello World</div>');
+// native Element
+el.appendChild(newEl)
 
+// Prepend
+$el.prepend();
 
+el.insertAdjacentHTML('afterbegin', '<div id="container">Hello World</div>');
+// native
+el.insertBefore(newEl, el.firstChild);
+
+// 在选中元素前加入新的元素
+// jQuery
+$newEl.insertBefore(querystring);
+// native
+el.insertAdjacentHTML('beforebegin ', '<div id="container">Hello World</div>');
+// native
+const el = document.querySelector(selector);
+if (el.parentNode) {
+    el.parentNode.insertBefore(newEl, el);
+}
+// 在选中元素的后面插入新的元素
+if (el.parentNode) {
+    el.parentNode.insertBefore(newEl, el.nextSibling);
+}
 
 
 
