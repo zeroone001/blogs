@@ -6,6 +6,6 @@ let _arr = generateRandomArr(10, 5, 100);
 
 function buddleSort (arr) {
     // body...
-
+    
 }
 
