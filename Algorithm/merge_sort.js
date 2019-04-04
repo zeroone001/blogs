@@ -3,6 +3,7 @@
     是第一个可以被实际使用的算法
     复杂度nlog^n
     是一种分治算法
+    递归
 */
 const generateRandomArr = require('./generate-random.js');
 let _arr = generateRandomArr(15, 5, 100);
