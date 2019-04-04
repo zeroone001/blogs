@@ -1,5 +1,7 @@
 /*
-    一，选择排序，两两比较
+   选择排序，两两比较,选择最小的，放前面；
+   记下位置，最后交换
+   复杂度：n^2 
 */
 const generateRandomArr = require('./generate-random.js');
 // console.log(generateRandomArr(10, 5, 50));

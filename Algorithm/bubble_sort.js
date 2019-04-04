@@ -1,5 +1,6 @@
 /*
     冒泡排序： 两两比较
+    复杂度 n^2
 */
 const generateRandomArr = require('./generate-random.js');
 let _arr = generateRandomArr(10, 5, 100);
