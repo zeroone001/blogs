@@ -1,8 +1,5 @@
 /*
-    基础排序算法
-*/
-/*
-    一，冒泡排序，两两比较
+    一，选择排序，两两比较
 */
 const generateRandomArr = require('./generate-random.js');
 // console.log(generateRandomArr(10, 5, 50));

@@ -2,11 +2,11 @@
     插入排序
     将元素插入已经排好序的前面的数组中
     相当于有两个数组，每次都跟前面的有序的数组的最后一个开始比较
+    插入排序可以提前终止，所以比选择排序的效率高
+    延伸，希尔排序
 */
 const generateRandomArr = require('./generate-random.js');
-
 let _arr = generateRandomArr(10, 5, 100);
-
 function InsertSort (arr) {
     const len = arr.length;
      for (let i = 1; i < len; i++) {
