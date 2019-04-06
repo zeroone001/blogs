@@ -8,7 +8,7 @@
 const generateRandomArr = require('./generate-random.js');
 let _arr = generateRandomArr(15, 5, 100);
 
-let merge = (left, right) => {
+let _merge = (left, right) => {
     let arr = [];
     let l = 0;
     let r = 0;
@@ -35,7 +35,7 @@ let mergeSort = (arr) => {
     let mid = Math.floor(len / 2);
     let left = arr.slice(0, mid);
     let right = arr.slice(mid, len);
-    return merge(mergeSort(left), mergeSort(right));
+    return _merge(mergeSort(left), mergeSort(right));
 }
 console.log(mergeSort(_arr));
 
