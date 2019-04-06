@@ -7,6 +7,11 @@
     递归
 */
 /*
+    1. 在数据集中选择一个元素作为基准
+    2，所有小于基准的值，放到左边，大于基准的值放到右边
+    3，对左右两边的子集，不断重复第一步和第二部，直到剩下一个元素为止
+*/
+/*
     arr.sort((a,b) => (b >= a));
     这种排序方式在新版本chrome不行了
 */
@@ -48,13 +53,8 @@ let quick = (left, right) => {
         }
     }
 };
-let arr = _arr; 
-let quickSort = (arr) => {
-    // if (arr.length <= 1) {
-    //     return arr;
-    // }
-
-    // return quickSort(left).concat(quickSort(right));
+// let arr = _arr; 
+let quickSort = () => {
     quick(0, arr.length - 1);
     return _arr;
 };  
@@ -79,8 +79,23 @@ function quickSort2 (_array) {
     return quickSort2(left).concat(current, quickSort2(right));
 }
 console.log(_arr);
-console.log(quickSort2(_arr));
+// console.log(quickSort2(_arr));
 
-
+let quickSort3 = (arr) => {
+    if (arr.length <= 1) return arr;
+    let pivotIndex = Math.floor(arr.length/2);
+    let pivot = arr.splice(pivotIndex, 1)[0];
+    let left = [];
+    let right = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < pivot) {
+            left.push(arr[i])
+        } else {
+            right.push(arr[i])
+        }
+    }
+    return quickSort3(left).concat([pivot], quickSort3(right));
+}
+console.log(quickSort3(_arr));
 
 
