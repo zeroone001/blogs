@@ -45,6 +45,7 @@
 * 高级排序算法
 * 归并排序  - ./merge_sort
 * 快速排序 - ./quick_sort
+* 堆排序 - ./heap_sort.js
 * 递归运用
 * 数据树
 * 天平找次品
