@@ -1,8 +1,8 @@
-# NOTES
-    😊
-## 知识点结构
-### Questions - ./Question/index.js
-* some questions
+# BLOGS
+> 😊 记录日常学习知识博客 by zeroone001 
+## Link
+- [每日一题](https://github.com/zeroone001/remind_exercises/blob/master/DailyInterview/README.md)
+
 ### CSS - ./CssInterview/
 * 盒模型
 * BFC
