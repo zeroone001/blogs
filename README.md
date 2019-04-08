@@ -2,10 +2,7 @@
 > 😊 记录日常学习知识博客 by zeroone001 
 ## Link
 - [每日一题](https://github.com/zeroone001/remind_exercises/blob/master/DailyInterview/README.md)
-
-### CSS - ./CssInterview/
-* 盒模型
-* BFC
+- [CssInterview](https://github.com/zeroone001/blogs/tree/master/CssInterview/README.md)
 ### Javascript - ./JSInterview/index.js
 * 原型
 * 执行上下文
