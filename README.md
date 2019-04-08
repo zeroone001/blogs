@@ -3,27 +3,10 @@
 ## Link
 - [每日一题](https://github.com/zeroone001/remind_exercises/blob/master/DailyInterview/README.md)
 - [CssInterview](https://github.com/zeroone001/blogs/tree/master/CssInterview/README.md)
-### Javascript - ./JSInterview/index.js
-* 原型
-* 执行上下文
-### 浏览器 - ./Browser/index.js
-* 跨标签页通讯 
-* 浏览器架构
-* 浏览器下事件循环
-* 从输入URL到展示的过程
-* 重绘与回流
-* 存储
-* Web Worker
-* V8垃圾回收机制
-* 内存泄漏
-### 服务端与网络 - ./Web/index.js
-* http/https 协议
-* Get/Post
-* websocket
-* TCP三次握手/TCP四次握手
-* 跨域
-* 安全
-* 
+- [深入浅出javascript基础](https://github.com/zeroone001/blogs/tree/master/JSInterview/README.md)
+- [浏览器见解](https://github.com/zeroone001/blogs/tree/master/Browser/README.md)
+- [服务端与网络](https://github.com/zeroone001/blogs/tree/master/Web/README.md)
+
 ### Vue框架 - ./VueInterview/index.js
 * nextTick
 * 生命周期
