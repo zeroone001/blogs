@@ -34,6 +34,15 @@ console.log(a()()())
 let a = {}
 let fn = function () { console.log(this) }
 fn.bind().bind(a)() // => ?
+// 相当于
+let a = {}
+let fn = function () { console.log(this) }
+let fn1 = function () {
+    return function () {
+        return fn.apply();
+    }.apply(a)
+}
+fn1();
 /*
     可以从上述代码中发现，不管我们给函数 bind 几次，
     fn 中的 this 永远由第一次 bind 决定，所以结果永远是 window。

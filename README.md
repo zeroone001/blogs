@@ -10,6 +10,7 @@
 - [必须知道的算法](https://github.com/zeroone001/blogs/tree/master/Algorithm/README.md)
 - [蚂蚁金服](https://github.com/zeroone001/blogs/tree/master/AntFinancialInterview)
 - [JQ to Native JS](https://github.com/zeroone001/blogs/tree/master/DontNeedJQuery)
+- [TypeScript教程](https://github.com/zeroone001/blogs/tree/master/TypeScript)
 
 
 
