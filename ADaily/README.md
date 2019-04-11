@@ -6,3 +6,7 @@
 ](https://github.com/zeroone001/remind_exercises/blob/master/DailyInterview/4-8.js)
 - [第 50 题：实现 (5).add(3).minus(2) 功能](https://github.com/zeroone001/remind_exercises/blob/master/DailyInterview/4-9.js)
 - [第 51 题：Vue 的响应式原理中 Object.defineProperty 有什么缺陷？为什么在 Vue3.0 采用了 Proxy，抛弃了 Object.defineProperty？](https://github.com/zeroone001/remind_exercises/blob/master/DailyInterview/4-10.js)
+- [第 52 题：怎么让一个 div 水平垂直居中](https://github.com/zeroone001/remind_exercises/blob/master/DailyInterview/4-11.md)
+
+
+

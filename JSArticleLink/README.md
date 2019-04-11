@@ -3,4 +3,6 @@
 - [【第1575期】JavaScript中的算法](https://mp.weixin.qq.com/s/4rPt7T59ifVTxg4dxCF50w)
 - [30-seconds-for-everyday](https://github.com/pushmetop/30-seconds-for-everyday/blob/master/SUMMARY.md)
 - [下拉加载，上拉刷新，tab切换](https://github.com/didi/cube-ui/tree/dev/src/components)
-- [getBoundingClientRect]()
+- [getBoundingClientRect](https://developer.mozilla.org/zh-CN/docs/Web/API/Element/getBoundingClientRect)
+- [中高级前端大厂面试秘籍，为你保驾护航金三银四，直通大厂(上)](https://juejin.im/post/5c64d15d6fb9a049d37f9c20#heading-66)
+- [(中篇)中高级前端大厂面试秘籍，寒冬中为您保驾护航，直通大厂](https://juejin.im/post/5c92f499f265da612647b754)

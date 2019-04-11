@@ -11,15 +11,44 @@
             height: 100px;
             background: yellow;
             border: 1px solid #000;
-            display: flex;
+            /* display: flex;
             justify-content: center;
-            align-items: center;
+            align-items: center; */
+            /* line-height: 1; */
+            /* position: relative; */
+            /* display: table; */
+            /* display: grid; */
+            /* position: relative; */
+            display: flex;
         }
         .children {
             background-color: red;
             width: 50px;
             height: 10px;
+            /* justify-self: center;
+            align-self: center; */
+            /* margin: 0 auto; */
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
             /* justify-content: center; */
+            /* position: absolute; */
+            /* top: 50%;
+            left: 50%;
+            margin-left: -25px;
+            margin-top: -5px; */
+            /* left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0; */
+            margin: auto;
+        }
+        .child {
+            width: 10px;
+            height: 5px;
+            background-color: black;
+            display: none;
         }
         .container {
             display: flex;
@@ -54,7 +83,9 @@
       <div class="extra">extra</div>
     </div>
     <div class="parent">
-        <div class="children"></div>
+        <div class="children">
+            <div class="child"></div>
+        </div>
     </div>
 </body>
 </html>
