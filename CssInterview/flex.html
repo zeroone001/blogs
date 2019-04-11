@@ -20,8 +20,15 @@
             /* display: grid; */
             /* position: relative; */
             /* display: flex; */
+            /* display: table-cell;
+            vertical-align: middle;
+            text-align: center; */
+            display: table;
         }
         .children {
+            display: table-cell;
+            vertical-align: middle;
+            text-align: center;
             background-color: red;
             width: 50px;
             height: 10px;
@@ -45,10 +52,11 @@
             /* margin: auto; */
         }
         .child {
+            display: inline-block;
             width: 10px;
             height: 5px;
             background-color: black;
-            display: none;
+            /* display: none; */
         }
         .container {
             display: flex;
