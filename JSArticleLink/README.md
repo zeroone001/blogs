@@ -8,3 +8,4 @@
 - [(中篇)中高级前端大厂面试秘籍，寒冬中为您保驾护航，直通大厂](https://juejin.im/post/5c92f499f265da612647b754)
 - [中国程序员容易发音错误的单词](https://github.com/shimohq/chinese-programmer-wrong-pronunciation)
 - [计算机学习资料列表-不只是计算机的学习资料](https://github.com/NGLSL/learning-material-list)
+- [小吴博客](https://www.cxyxiaowu.com)

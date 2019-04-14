@@ -17,9 +17,14 @@
     return item !== 5;
 });
 /*
+    reduce,可以将数组中的元素，通过回掉函数最终转换为一个值
+    reduce接受两个参数，也可以不写第二个参数，
+    第二个参数代表初始值
     
 */
-
+[1,2,3,4].reduce((a,b) => {
+console.log(a,b);
+return a + b}, 0);
 
 
 
