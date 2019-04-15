@@ -30,7 +30,7 @@ new Promise((resolve, reject) => {
 console.log('finifsh')
 // new Promise -> finifsh
 ```
-
+每次调用then之后返回的都是Promise, 并且是一个全新的
 
 
 
