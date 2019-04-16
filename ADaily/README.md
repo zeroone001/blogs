@@ -10,6 +10,7 @@
 - [JS连续赋值的坑](https://github.com/zeroone001/blogs/blob/master/ADaily/4-12.md)
 - [查找数组重复元素](https://github.com/zeroone001/blogs/blob/master/ADaily/4-1.md)
 - [冒泡排序](https://github.com/zeroone001/blogs/blob/master/ADaily/4-15.md)
+- [类数组](https://github.com/zeroone001/blogs/blob/master/ADaily/4-16.md)
 
 
 
