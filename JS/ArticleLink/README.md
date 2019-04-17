@@ -10,5 +10,6 @@
 - [计算机学习资料列表-不只是计算机的学习资料](https://github.com/NGLSL/learning-material-list)
 - [小吴博客](https://www.cxyxiaowu.com)
 - [30-seconds-of-code](https://github.com/30-seconds/30-seconds-of-code)
+- [JavaScript深入之从原型到原型链](https://github.com/mqyqingfeng/Blog/issues/2)
 
 
