@@ -53,3 +53,15 @@ function LazyMan(name) {
     return new LazyManClass(name);
 }
 LazyMan('Tony').eat('lunch').eat('dinner').sleepFirst(5).sleep(4).eat('junk food');
+
+function Demo (age) {
+    this.age = age;
+}
+var p = new Demo(11);
+
+
+
+
+
+
+
