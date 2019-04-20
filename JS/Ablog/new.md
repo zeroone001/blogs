@@ -9,3 +9,35 @@ function new1 (father, ...rest) {
     }
     return o;
 }
+#### 手写call,apply ,bind
+```javascript
+
+Function.prototype.call = function (context, ...rest) {
+    if (typeof this !== 'function') {
+        throw new TypeError();
+    }
+    context = context || window;
+    context.fn = this;
+    var result  = context.fn(...rest);
+    delete context.fn;
+    return result;
+}
+// apply
+Function.prototype.apply = function (context, arr) {
+    if (typeof this !== 'function') {
+        throw new TypeError();
+    }
+    context = context || window;
+    context.fn = this;
+    var result;
+    if (arr && Object.prototype.toString.call(arr) === '[object  Array]') {
+        context.fn(...arr);
+    } else {
+        context.fn();
+    }
+    delete context.fn;
+    return result;
+}
+```
+
+```
