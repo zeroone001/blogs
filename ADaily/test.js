@@ -1,4 +1,4 @@
-class LazyManClass {
+/*class LazyManClass {
     constructor(name) {
         this.taskList = [];
         this.name = name;
@@ -57,8 +57,16 @@ LazyMan('Tony').eat('lunch').eat('dinner').sleepFirst(5).sleep(4).eat('junk food
 function Demo (age) {
     this.age = age;
 }
-var p = new Demo(11);
+var p = new Demo(11);*/
 
+// 并集
+var nums1 = [1, 2, 2, 1], nums2 = [2, 2, 3, 4];
+var newArr1 = nums1.concat( nums2.filter(function(item) {
+     return nums1.indexOf(item) === -1;
+}));
+console.log(newArr1);
+
+// 
 
 
 
