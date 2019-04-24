@@ -9,56 +9,21 @@
             height: 100px;
             background: yellow;
             border: 1px solid #000;
-            /* display: flex;
-            justify-content: center;
-            align-items: center; */
-            /* line-height: 1; */
-            /* position: relative; */
-            /* display: table; */
-            /* display: grid; */
-            /* position: relative; */
-            /* display: flex; */
-            /* display: table-cell;
-            vertical-align: middle;
-            text-align: center; */
-            display: table;
-            font-size: 0;
-            text-align: center;
+            position: relative;
 
         }
-        /* .parent::before {
-            content: "";
-            width: 0;
-            height: 100%;
-            vertical-align: middle;
-            display: inline-block;
-        } */
-        .children {
-            display: table-cell;
-            /* display: inline-block; */
-            vertical-align: middle;
-            /* text-align: center; */
+.children {
+           
             background-color: red;
             width: 50px;
             height: 10px;
-            /* justify-self: center;
-            align-self: center; */
-            /* margin: 0 auto; */
-            /* position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%); */
-            /* justify-content: center; */
-            /* position: absolute; */
-            /* top: 50%;
-            left: 50%;
-            margin-left: -25px;
-            margin-top: -5px; */
-            /* left: 0;
-            top: 0;
-            right: 0;
-            bottom: 0; */
-            /* margin: auto; */
+            position: absolute;
+  left: 0;
+    margin: auto;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  
         }
         .child {
             display: inline-block;
@@ -70,6 +35,7 @@
     </style>
 </head>
 <body>
+    <!-- https://github.com/Advanced-Frontend/Daily-Interview-Question/issues/92 -->
     <div class="parent">
         <div class="children">
             <!-- <div class="child"></div> -->
