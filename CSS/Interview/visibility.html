@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>requestAnimationFrame</title>
+    <style>
+        body {
+            height: 4000px;
+        }
+        .content {
+            width: 0px;
+            height: 400px;
+            background-color: yellow;
+            border: 1px solid #000;
+            /* visibility: hidden; */
+            display: none;
+            opacity: 0;
+        }
+        .conten1 {
+            width: 200px;
+            height: 500px;
+            background-color: red;
+        }
+        .content.fixed {
+           /*  visibility: visible; */
+           display: block;
+            opacity: 1;
+            position: fixed;
+            top: 5px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conten1"></div>
+    <div class="content"></div>
+    <script>
+        var myScroll = function (fn) {
+            var scrolling = false;
+            return function () {
+                if (!scrolling) {
+                    window.requestAnimationFrame(function(e) {
+                        fn.call(e);
+                        scrolling = false;
+                    });
+                    scrolling = true;
+                }
+            }
+        };
+        document.addEventListener('scroll', myScroll(function() {
+            var ds = document.documentElement.scrollTop || document.body.scrollTop;
+            if (ds > 500) {
+                console.log('213')
+                document.getElementsByClassName('content')[0].className = 'content fixed' 
+            }
+        }));
+    </script>
+</body>
+</html>
+
+
