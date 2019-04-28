@@ -73,6 +73,8 @@ transform-runtime 可以重复使用 Babel 注入的程序代码来节省代码�
  "plugins": ["@babel/plugin-transform-runtime"]
 }
 ```
+#### 参考资料
+[webpack性能优化](https://juejin.im/post/5cae0f616fb9a068a93f0613)
 
 
 
