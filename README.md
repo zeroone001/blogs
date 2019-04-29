@@ -1,7 +1,7 @@
 # BLOGS
 > 😊 记录日常学习知识博客 by zeroone001
 ## Link
-- [每日一题](https://github.com/zeroone001/remind_exercises/blob/master/ADaily/)
+- [每周一组题](https://github.com/zeroone001/remind_exercises/blob/master/ADaily/)
 - [深入浅出Css基础](https://github.com/zeroone001/blogs/tree/master/CSS/README.md)
 - [深入浅出Javascript基础](https://github.com/zeroone001/blogs/tree/master/JS/README.md)
 - [浏览器见解](https://github.com/zeroone001/blogs/tree/master/Browser/README.md)
