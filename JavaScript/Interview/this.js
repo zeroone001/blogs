@@ -1,3 +1,13 @@
+/*
+    函数执行改变this
+    obj.fun() this === obj;
+    func() 相当于window.func() this === window;
+
+    三种修改this的指向：
+    call: fn.call(target, 1, 2);
+    apply: fn.apply(target, [1, 2]);
+    bind: fn.bind(target)(1, 2);
+*/
 // 如何正确判断 this？箭头函数的 this 是什么？
 function foo() {
   console.log(this.a)
@@ -58,20 +68,3 @@ foo.bind(a)() // => 'yck'
     首先，new 的方式优先级最高，接下来是 bind 这些函数，
     然后是 obj.foo() 这种调用方式，最后是 foo 这种调用方式，同时，箭头函数的 this 一旦被绑定，就不会再被任何方式所改变。
 */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
