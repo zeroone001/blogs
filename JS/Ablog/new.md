@@ -11,14 +11,13 @@ function new1 (father, ...rest) {
 }
 #### 手写call,apply ,bind
 ```javascript
-
 Function.prototype.call = function (context, ...rest) {
     if (typeof this !== 'function') {
         throw new TypeError();
     }
     context = context || window;
     context.fn = this;
-    var result  = context.fn(...rest);
+    var result = context.fn(...rest);
     delete context.fn;
     return result;
 }
@@ -31,9 +30,9 @@ Function.prototype.apply = function (context, arr) {
     context.fn = this;
     var result;
     if (arr && Object.prototype.toString.call(arr) === '[object  Array]') {
-        context.fn(...arr);
+        result = context.fn(...arr);
     } else {
-        context.fn();
+        result = context.fn();
     }
     delete context.fn;
     return result;
