@@ -56,3 +56,16 @@ Promise.prototype.then = function (resolveFun, rejectFun) {
     }
 };
 
+/*
+    深入理解 + 复习
+
+*/
+
+
+
+
+
+
+
+
+
