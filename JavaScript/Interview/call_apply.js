@@ -11,6 +11,26 @@ Function.prototype.call = function (context, ...rest) {
     delete context.fn;
     return result;
 }
+/*
+    手写一个bind
+*/
+Function.prototype.bind = function (context) {
+    if (typeof this !== 'function') {
+        throw new TypeErrow('Error');
+    }
+
+
+    const that = this;
+    const args = [...arguments].slice(1);
+
+    return function F() {
+        if (this instanceof F) {
+            return new that(...args, ...arguments);
+        }
+
+        return that.apply(context, args.concat(...arguments));
+    }
+}
 
 /*
     手写一个apply
