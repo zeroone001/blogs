@@ -44,3 +44,8 @@ layout: 布局
 GPU painting: 像素绘制页面
 
 */
+/*
+    chrome 浏览器跨域 
+    命令： open -n /Applications/Google\ Chrome.app/ --args --disable-web-security  --user-data-dir=/Users/smzdm/MyChromeDevUserData/
+
+*/
