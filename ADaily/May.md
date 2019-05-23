@@ -31,6 +31,9 @@ a[b]='b';
 a[c]='c';
 console.log(a[b]);
 ```
+#### 介绍下 Promise.all 使用、原理实现及错误处理
+
+
 
 
 
