@@ -43,7 +43,25 @@ Promise.all方法接受一个数组作为参数，p1、p2、p3都是 Promise 实
     return x > 10 && x === Number(x.toString().split('').reverse().join(''))
 })
 ```
-
+#### 算法题「移动零」，给定一个数组 nums，编写一个函数将所有 0 移动到数组的末尾，同时保持非零元素的相对顺序
+```javascript
+输入: [0,1,0,3,12]
+输出: [1,3,12,0,0]
+```
+```javascript
+function moveZero (arr) {
+    let j = 0;
+    let len = arr.length;
+    for (let i = 0; i < len - j; i++) {
+        if (arr[i] === 0) {
+            arr.push(0);
+            arr.splice(i, 1);
+            i--;
+            j++;
+        }
+    }
+}
+```
 
 
 
