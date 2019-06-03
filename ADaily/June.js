@@ -14,7 +14,8 @@
     所以返回 [0, 1]
 */
 /*
-    entries 
+    Array.entries() 
+    Array.indexOf() 
 */
 
 function twoNums (nums, target) {
@@ -42,4 +43,40 @@ function twoNums1 (nums, target) {
         }
     }
 }
+/*
+    请实现一个 add 函数，满足以下功能
+*/
+
+
+/*
+    JS 判断一个对象是否为空？
+*/
+function isObjEmpty(obj) {
+    for (var i in obj) {
+        return false
+    }
+    return true
+}
+function isObjEmpty (obj) {
+    if (JSON.stringify(obj) === '{}') {
+        return true
+    }
+    return false;
+}
+function isObjEmpty (obj) {
+    if (Object.keys(obj).length === 0) {
+        return true
+    }
+    return false
+}
+
+
+
+
+
+
+
+
+
+
 
