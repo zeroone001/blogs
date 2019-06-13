@@ -45,6 +45,12 @@ function twoNums1 (nums, target) {
 }
 /*
     请实现一个 add 函数，满足以下功能
+    add(1);     // 1
+    add(1)(2);      // 3
+    add(1)(2)(3)；  // 6
+    add(1)(2, 3);   // 6
+    add(1, 2)(3);   // 6
+    add(1, 2, 3);   // 6
 */
 
 
@@ -61,7 +67,7 @@ function isObjEmpty (obj) {
     if (JSON.stringify(obj) === '{}') {
         return true
     }
-    return false;
+    return false
 }
 function isObjEmpty (obj) {
     if (Object.keys(obj).length === 0) {
