@@ -70,3 +70,29 @@
                   },
         }
 */
+/*
+  Vertical scrolling in iOS not smooth ?
+*/
+/*
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+*/
+/**/
+getMonthWeek: function (a, b, c) {
+      /*
+      a = d = 当前日期
+      b = 6 - w = 当前周的还有几天过完（不算今天）
+      a + b 的和在除以7 就是当天是当前月份的第几周
+      */
+      let date = new Date();
+      let y = date.getFullYear();
+      let m = date.getMonth() - 1;
+      let w = date.getDay();
+      let d = date.getDate();
+
+      m = m < 10 ? '0' + m : m;
+      return y + '.' + m + '第' + (Math.ceil(
+          (d + 6 - w) / 7) + '周'
+      );
+  },
