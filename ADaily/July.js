@@ -72,12 +72,12 @@
 */
 /*
   Vertical scrolling in iOS not smooth ?
+  overflow: scroll 在IOS上不流畅
 */
-/*
-  * {
-    -webkit-overflow-scrolling: touch;
-  }
-*/
+* {
+  -webkit-overflow-scrolling: touch;
+}
+
 /**/
 getMonthWeek: function (a, b, c) {
       /*
@@ -118,7 +118,8 @@ async beforeApply (e) {
         }
     }
 },
-
+// event.preventDefault()不起作用的坑
+// 如果event.preventDefault()前面有异步调用就不起作用了
 
 
 
