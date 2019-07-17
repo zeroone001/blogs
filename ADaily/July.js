@@ -95,4 +95,46 @@ getMonthWeek: function (a, b, c) {
       return y + '.' + m + '第' + (Math.ceil(
           (d + 6 - w) / 7) + '周'
       );
-  },
+ }
+// vue 中使用 async/await 将 axios 异步请求同步化处理
+// 场景：a标签跳转
+async beforeApply (e) {
+    console.log('e', e);
+    if (!this.isClickApply) {
+        this.isClickApply = true;
+    } else {
+        let params = {
+            publish_time: this.publish_time
+        };
+        var response = await axios.get(domainUrl + 'jsonp_weekly_detail', params);
+        console.log('response', response);
+        if (response.error_code === 0) {
+            let data = response.data;
+            if (data.bl_master_audit_status === 0 || data.bl_master_audit_status === 1 || data.bl_master_audit_status === 2) {
+                e.preventDefault();
+                this.alertBoxShow('正在审核中');
+                this.baoliaoData.bl_master_audit_status = data.bl_master_audit_status;
+            }
+        }
+    }
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
