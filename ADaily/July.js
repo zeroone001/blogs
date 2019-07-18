@@ -120,7 +120,8 @@ async beforeApply (e) {
 },
 // event.preventDefault()不起作用的坑
 // 如果event.preventDefault()前面有异步调用就不起作用了
-
+// e.stopPropagation();
+// e.stopImmediatePropagation();
 
 
 

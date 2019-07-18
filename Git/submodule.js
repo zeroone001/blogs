@@ -1,3 +1,5 @@
+// Git submodule 子模块的管理和使用
+// https://www.jianshu.com/p/9000cd49822c
 /*
     Git 子模块遇到的问题
     1， 不能直接新建.gitmodules文件，这样直接拉取不了
