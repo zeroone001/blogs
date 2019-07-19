@@ -131,7 +131,7 @@ async beforeApply (e) {
   客户端穿透问题fixed
 */
 /*
-  body设置fixed,然后top 设置成动态的值
+  body设置fixed,然后top 设置成动态的值获取他的scrollTop
 */
 
 
