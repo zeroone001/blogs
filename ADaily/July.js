@@ -123,6 +123,11 @@ async beforeApply (e) {
 // e.stopPropagation();
 // e.stopImmediatePropagation();
 
+// 客户端给接口缓存的bug
+// 在客户端里面，我们用axios发送的第二次等多次请求，会有缓存，
+// 客户端会把数据缓存，之后，服务器接收不到，解决方案，在接口链接上加时间戳
+
+
 
 
 
