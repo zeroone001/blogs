@@ -120,8 +120,8 @@ async beforeApply (e) {
 },
 // event.preventDefault()不起作用的坑
 // 如果event.preventDefault()前面有异步调用就不起作用了
-// e.stopPropagation();
-// e.stopImmediatePropagation();
+e.stopPropagation();
+e.stopImmediatePropagation();
 
 // 客户端给接口缓存的bug
 // 在客户端里面，我们用axios发送的第二次等多次请求，会有缓存，
@@ -134,7 +134,16 @@ async beforeApply (e) {
   body设置fixed,然后top 设置成动态的值获取他的scrollTop
 */
 
-
+// vue
+// 不需要编译器
+new Vue({
+  render (h) {
+    return h('div', this.hi)
+  }
+})
+// 当使用 vue-loader 或 vueify 的时候，*.vue 文件内部的模板会在构建时预编译成 JavaScript。
+// 你在最终打好的包里实际上是不需要编译器的，所以只用运行时版本即可
+// 只要不用template就不需要配置别名了
 
 
 
