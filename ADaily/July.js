@@ -146,7 +146,11 @@ new Vue({
 // 只要不用template就不需要配置别名了
 
 
-
+$(document).click(function(event) {
+    if (!$(event.target).is("#master, #slave")) {
+        $("#slave").hide();
+    }
+});
 
 
 
