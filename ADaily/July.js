@@ -207,6 +207,20 @@ var mescroll = new MeScroll("mescroll", {
     -webkit-overflow-scrolling: touch;
 }
 
+// 获取时间戳
+
+Date.now();
+new Date().getTime();
+
+// flex 布局深入了解
+// 垂直方向上的space-between
+
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+justify-content: space-between;
+
+
 
 
 
