@@ -200,7 +200,12 @@ var mescroll = new MeScroll("mescroll", {
   }
 });
 
+// 通配符
 
+* {
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+}
 
 
 
