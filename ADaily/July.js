@@ -152,9 +152,53 @@ $(document).click(function(event) {
     }
 });
 
+// 手势库 
+// https://github.com/AlloyTeam/AlloyFinger
+npm install alloyfinger
+import AlloyFinger from 'alloyfinger';
+var af = new AlloyFinger(element, {
+    touchStart: function () { },
+    touchMove: function () { },
+    touchEnd:  function () { },
+    touchCancel: function () { },
+    multipointStart: function () { },
+    multipointEnd: function () { },
+    tap: function () { },
+    doubleTap: function () { },
+    longTap: function () { },
+    singleTap: function () { },
+    rotate: function (evt) {
+        console.log(evt.angle);
+    },
+    pinch: function (evt) {
+        console.log(evt.zoom);
+    },
+    pressMove: function (evt) {
+        console.log(evt.deltaX);
+        console.log(evt.deltaY);
+    },
+    swipe: function (evt) {
+        console.log("swipe" + evt.direction);
+    }
+});
 
-
-
+// 上拉加载，下拉刷新 mescroll 很好用
+// http://www.mescroll.com/api.html
+// id="mescroll"
+function downCallback(argument) {
+  // body...
+}
+function UpCallback(argument) {
+  // body...
+}
+var mescroll = new MeScroll("mescroll", {
+  up: {
+    callback: downCallback
+  },
+  down: {
+    callback: UpCallback
+  }
+});
 
 
 
