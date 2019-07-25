@@ -220,6 +220,154 @@ flex-wrap: wrap;
 flex-direction: column;
 justify-content: space-between;
 
+// echarts 雷达图
+// 引入 ECharts 主模块
+import echarts from 'echarts/lib/echarts';
+// 引入雷达图
+import 'echarts/lib/chart/radar';
+import 'echarts/lib/component/title';
+
+const that = this;
+let Chart = echarts.init(document.getElementById('J_chart'));
+let chartObj = {
+    title: {
+        text: '100',
+        show: true,
+        left: 'center',
+        top: '130',
+        zlevel: 10,
+        z: 100,
+        textStyle: {
+            color: '#b08034',
+            fontWeight: 'bold',
+            fontSize: 35
+        }
+    },
+    radar: [
+        {
+            center: ['50%', '55%'],
+            zlevel: 2,
+            z: 10,
+            name: {
+                formatter: function (val, indicator) {
+                    var arr = ['{' + indicator.icon + '|}', '{value|' + val + '}'];
+                    return arr.join('\n');
+                },
+                rich: {
+                    iconGx: {
+                        height: 20,
+                        align: 'center',
+                        backgroundColor: {
+                            image: iconObj.gx
+                        }
+                    },
+                    iconCz: {
+                        height: 20,
+                        align: 'center',
+                        backgroundColor: {
+                            image: iconObj.cz
+                        }
+                    },
+                    iconHd: {
+                        height: 20,
+                        align: 'center',
+                        backgroundColor: {
+                            image: iconObj.hd
+                        }
+                    },
+                    iconHy: {
+                        height: 20,
+                        align: 'center',
+                        backgroundColor: {
+                            image: iconObj.hy
+                        }
+                    },
+                    iconDh: {
+                        height: 20,
+                        align: 'center',
+                        backgroundColor: {
+                            image: iconObj.dh
+                        }
+                    },
+                    value: {
+                        height: 20,
+                        verticalAlign: 'bottom',
+                        color: '#b08034',
+                        fontSize: 14
+                    }
+                }
+            },
+            indicator: [
+                { text: '贡献力', max: 100, icon: 'iconGx' },
+                { text: '创作力', max: 100, icon: 'iconCz' },
+                { text: '互动', max: 100, icon: 'iconHd' },
+                { text: '活跃', max: 100, icon: 'iconHy' },
+                { text: '带货力', max: 100, icon: 'iconDh' }
+            ],
+            radius: 100,
+            splitNumber: 4,
+            triggerEvent: true,
+            axisLine: {
+                lineStyle: {
+                    color: '#ddd'
+                }
+            },
+            splitLine: {
+                lineStyle: {
+                    color: '#ddd'
+                }
+            },
+            splitArea: {
+                areaStyle: {
+                    color: ['#f7f7f7', '#fff'],
+                    opacity: 1
+                }
+            }
+        }
+    ],
+    series: [
+        {
+            name: '爆料分',
+            zlevel: 4,
+            z: 20,
+            type: 'radar',
+            // radarIndex: 1,
+            itemStyle: {
+                opacity: 0
+            },
+            lineStyle: {
+                opacity: 0
+            },
+            areaStyle: {
+                opacity: 0.5,
+                color: '#e7bf74'
+            },
+            data: [
+                {
+                    value: [90, 13, 40, 30, 70],
+                    name: '爆料分'
+                }
+            ]
+        }
+    ]
+};
+Chart.on('click', (param) => {
+    console.log(param);
+    let name = param.name;
+    if (name.indexOf('贡献力') > 0) {
+        that.showDesc(4);
+    } else if (name.indexOf('创作力') > 0) {
+        that.showDesc(6);
+    } else if (name.indexOf('互动') > 0) {
+        that.showDesc(7);
+    } else if (name.indexOf('活跃') > 0) {
+        that.showDesc(8);
+    } else if (name.indexOf('带货力') > 0) {
+        that.showDesc(5);
+    }
+});
+Chart.setOption(chartObj);
+
 
 
 
