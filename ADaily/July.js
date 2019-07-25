@@ -214,7 +214,7 @@ new Date().getTime();
 
 // flex 布局深入了解
 // 垂直方向上的space-between
-
+// 注意要有width 或者 height
 display: flex;
 flex-wrap: wrap;
 flex-direction: column;
