@@ -132,5 +132,15 @@ addTask(400, '4')
 
 // pointer-events: none 这个属性坑死了
 
+// 
+
+var str = `
+    console.log('312321312')
+`;
+var node = document.createElement('script');
+node.text = str;
+setTimeout(() => {
+    document.getElementById('testtest').appendChild(node);
+}, 4000);
 
 
