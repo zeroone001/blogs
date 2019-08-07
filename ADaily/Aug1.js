@@ -91,5 +91,8 @@ function handleEvent () {
     }
 }
 
+// html img图片上方产生1像素px间隙解决
+// 通过CSS对图片加一个浮动属性，比如.divcss5 img{ float:left }
+
 
 
