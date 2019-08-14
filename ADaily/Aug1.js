@@ -94,5 +94,19 @@ function handleEvent () {
 // html img图片上方产生1像素px间隙解决
 // 通过CSS对图片加一个浮动属性，比如.divcss5 img{ float:left }
 
-
+// different text colour for part of string in text input
+<div id="input" contenteditable="true"><span>This is </span> quite cool!</div>
+#input{
+  font-family:Arial, Helvetica, sans-serif;
+  border:1px solid #ccc;
+  background:#eee;
+  height:20px;
+  width:200px;
+  padding:7px;
+  color:#888;
+}
+#input span{
+  color:#444;
+  font-weight:bold;
+}
 
