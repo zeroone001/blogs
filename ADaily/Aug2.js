@@ -28,4 +28,10 @@
 
 var x = this.getBoundingClientRect().top + document.documentElement.scrollTop;
 
+// node path
+
+path.relative(from, to);
+
+// path.relative() 方法根据当前工作目录返回 from 到 to 的相对路径。 如果 from 和 to 各自解析到相同的路径（分别调用 path.resolve() 之后），则返回零长度的字符串。
+
 
