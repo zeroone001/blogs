@@ -26,3 +26,23 @@ press "q".
     On macOS Mojave, the chown command needs to be run on the specific directory, an example for the permissions issue in /usr/local/lib directory, this command would be
     sudo chown -R "$(whoami)":admin /usr/local/lib
 */
+
+/*
+   bin/cache/lockfile 删除 
+    
+   open ios/Runner.xcworkspace
+
+   PS: 注意在真机上信任flutterAPP，位置在【通用】-> [设备管理]
+
+
+*/
+
+
+
+
+
+
+
+
+
+
