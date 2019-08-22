@@ -1,13 +1,10 @@
-/*
-    1. download flutter
-    2. 放置flutter解压缩之后的文件夹
-    3. cd flutter && pwd -> 获取到[路径]
-    4. .zshrc 文件 && export PATH="$PATH:/路径/flutter/bin"
-    5. sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
-    6. sudo xcodebuild -license
-    7. 打开IOS模拟器 && open -a Simulator
-    
-*/
+  1. download flutter
+  2. 放置flutter解压缩之后的文件夹
+  3. cd flutter && pwd -> 获取到[路径]
+  4. .zshrc 文件 && export PATH="$PATH:/路径/flutter/bin"
+  5. sudo xcode-select --switch /Applications/Xcode.app/Contents/Developer
+  6. sudo xcodebuild -license
+  7. 打开IOS模拟器 && open -a Simulator
 /*
     create APP
 
@@ -28,13 +25,11 @@ press "q".
 */
 
 /*
-   bin/cache/lockfile 删除 
-    
+   bin/cache/lockfile 删除
+
    open ios/Runner.xcworkspace
 
    PS: 注意在真机上信任flutterAPP，位置在【通用】-> [设备管理]
-
-
 */
 
 
