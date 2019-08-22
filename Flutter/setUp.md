@@ -15,7 +15,7 @@ state), press "R".
 http://127.0.0.1:56484/OiXrkQmphmk=/
     3. For a more detailed help message, press "h". To detach, press "d"; to quit,
 press "q".
- sudo mkdir -p /usr/local/sbin
+  sudo mkdir -p /usr/local/sbin
   sudo chown -R $(whoami) /usr/local/sbin
 */
 
@@ -30,6 +30,9 @@ press "q".
    open ios/Runner.xcworkspace
 
    PS: 注意在真机上信任flutterAPP，位置在【通用】-> [设备管理]
+
+   flutter pub get # 装包
+
 */
 
 

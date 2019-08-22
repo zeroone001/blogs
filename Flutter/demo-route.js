@@ -1,17 +1,17 @@
-// import 'dart:math';
-// #enddocregion ShakeCurve
-// import 'package:flutter/animation.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(
   MaterialApp(
     title: 'Naviagtor',
-    home: FirstRoute(),
+    initialRoute: '/',
+    routes: {
+      '/': (context) => FirstRoute(),
+      '/second': (context) => SecondRoute()
+    }
   ));
 
-
 class FirstRoute extends StatelessWidget {
-  @override
+  @override 
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
@@ -21,10 +21,7 @@ class FirstRoute extends StatelessWidget {
         child: RaisedButton(
           child: Text('open route'),
           onPressed: () {
-            Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => SecondRoute()),
-            );
+            Navigator.pushNamed(context, '/second');
           },
         ),
       ),
@@ -37,7 +34,7 @@ class SecondRoute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('second Route'),
+        title: Text('second Route~'),
       ),
       body: Center(
         child: RaisedButton(
