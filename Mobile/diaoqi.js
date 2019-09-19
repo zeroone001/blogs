@@ -136,3 +136,7 @@
                 }
             }
         });
+
+        window.onresize = function () {
+            console.log(document.documentElement.clientHeight);
+        }
