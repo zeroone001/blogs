@@ -18,15 +18,22 @@
             keyword: 1,
             name: 'lys'
         }];
-        function ToQueryStringParams (obj) {
+        function ToQueryStringParams (obj, objName) {
+            var stringParams = '';
             if (Object.prototype.toString.call(obj) === '[object Array]') {
-                obj.forEach(function () {
-                    
+
+                obj.forEach(function (item, index) {
+                    stringParams += Object.keys(item).map(function (key) {
+                        let strKey = objName + '[' + index + '][' + key + ']';
+                        return ''.concat(encodeURIComponent(strKey), '=').concat(encodeURIComponent(item[key])) + '&';
+                    }).join('');
                 });
             } else if (Object.prototype.toString.call(obj) === '[object Object]') {
 
             }
+            return stringParams.slice(0, stringParams.length - 1);
         }
+        ToQueryStringParams(keywords, 'keywords');
     </script>
 </body>
 </html>
