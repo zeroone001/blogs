@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>IOS 键盘收起会留下空白</title>
+</head>
+<body>
+    <div>
+        <input type="text" id="my_input" />
+    </div>
+    <script>
+        document.getElementById('my_input').addEventListener('blur', function () {
+            window.scroll(0, window.scrollY);
+        }); 
+    </script>
+</body>
+</html>
