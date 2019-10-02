@@ -9,17 +9,24 @@
 <body>
     <h2>IOS 里面Vue 项目， 删除里面值，导致只剩下一行placeholder</h2>
     <div>
-        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <textarea v-model="val" :placeholder="placeholderData" name="" id="" cols="30" rows="10" ></textarea>
     </div>
     <script>
         export default {
             data () {
                 return {
-
+                    val: '',
+                    placeholderData: ''
                 };
             },
             watch: {
-                
+                val (newval) {
+                    if (newval) {
+                        this.placeholderData = '';
+                    } else {
+                        this.placeholderData = '我是placeholder'
+                    }
+                }
             }
         }
     </script>
