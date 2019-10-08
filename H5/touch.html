@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>touch</title>
+    <style>
+        canvas {
+            border: 1px solid #000;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas" width="600" height="600"></canvas>
+    <div>touch</div>
+    <script>
+        window.onload = function () {
+            const el = document.getElementById('canvas');
+            el.addEventListener('touchstart', function (e) {
+                e.preventDefault();
+                console.log('e', e.changedTouches);
+                var ctx = el.getContext('2d');
+                const touches = e.changedTouches;
+                for (let i = 0; i < touches.length; i++) {
+                    let domT = touches[i];
+                    const color = colorForTouch(domT);
+                    ctx.beginPath();
+                    ctx.arc(domT.pageX, domT.pageY, 4, 0, 2 * Math.PI, false);
+                    ctx.fillStyle = color;
+                    ctx.fill();
+                    console.log("第 " + i + " 个触摸已开始。");
+                }
+            });
+            el.addEventListener('touchmove', function (e) {
+                // console.log('e2', e);
+            });
+            el.addEventListener('touchend', function (e) {
+                console.log('e3', e);
+            });
+            function colorForTouch (touch) {
+                let r = touch.identifier % 16;
+                let g = Math.floor(touch.identifier / 3) % 16;
+                let b = Math.floor(touch.identifier / 7) % 16;
+                r = r.toString(16); // 转换为十六进制字符串
+                g = g.toString(16); // 转换为十六进制字符串
+                b = b.toString(16); // 转换为十六进制字符串
+                const color = "#" + r + g + b;
+                console.log("identifier " + touch.identifier + " 触摸的颜色为：" + color);
+                return color;
+            }
+        };
+    </script>
+</body>
+</html>
