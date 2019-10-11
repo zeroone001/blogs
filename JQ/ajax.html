@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        $.ajax({
+            // 设置之后，可以携带cookie
+            xhrFields: {
+                withCredentials: true
+            },
+        })
+        // 后端配置代码
+        // header("Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept");
+        // header("Access-Control-Allow-Credentials: true");
+        // header("Access-Control-Allow-Origin: *");
+        // 问题在于不能携带cookie，如果要携带cookie要配置对应的域名
+    
+    </script>
+    
+</body>
+</html>
