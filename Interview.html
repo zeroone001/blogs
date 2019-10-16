@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+mobile 弹窗 怎么让一个 div 水平垂直居中 
+
+1.  
+```css 
+div.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+```
+2.
+```css
+div.parent {
+    position: relative; 
+}
+div.child {
+    position: absolute; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);  
+}
+/* 或者 */
+div.child {
+    width: 50px;
+    height: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -25px;
+    margin-top: -5px;
+}
+/* 或 */
+div.child {
+    width: 50px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+```
+3.
+```css
+div.parent {
+    display: grid;
+}
+div.child {
+    justify-self: center;
+    align-self: center;
+}
+```
+4. 
+```css
+div.parent{
+  display:flex;
+}
+div.child{
+  margin:auto;
+}
+```
+
+
+2. img 水平居中？
+
+3. rem() 配置,使用rem的配置
+let deviceWidth = document.documentElement.clientWidth;
+if (deviceWidth > 750) deviceWidth = 750;
+document.documentElement.style.fontSize = deviceWidth / 10 + 'px';
+
+@function rem ($px) {
+    @return $px / 75 * 1rem;
+}
+4. touch
+
+5. Vue
+
+6. flex
+
+7. jsonp
+
+ 
+
+
+</body>
+</html>
