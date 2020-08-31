@@ -1,3 +1,8 @@
+/**
+ * Description: 请输入文件描述
+ * Author: liuyongsheng
+ * Date: 2020-03-20 15:02:30
+*/
 /*
     跨域问题
     ajax 跨域报错原因：
@@ -6,7 +11,7 @@
     3， XHR （用jsonp（<script>）,或者<img>都可以解决）
 */
 /*
-    浏览器限制的解决方案： 控制台：  open -n /Applications/Google\ Chrome.app/ —args —disable-web-security  —user-data-dir=/Users/smzdm/MyChromeDevUserData/
+    浏览器限制的解决方案： 控制台：  open -n /Applications/Google\ Chrome.app/ —args —disable-web-security  —user-data-dir=/Users/xxxx/MyChromeDevUserData/
 
 */
 /*
@@ -21,13 +26,8 @@ Type: script
 */
 /*
     简单请求&非简单请求
-
     OPTIONS预检命令
-    
-
-
 */
-
 /*
     Access-control-allow-origin: '*'
     服务器解决跨域
@@ -41,19 +41,14 @@ Type: script
 $.ajax({
     xhrFields: {
         withCredentials: true
-    } 
+    }
 });
-
 /*
-
 nginx
 启动
 start nginx
-
 nginx -s reload
-
 nginx -s stop
-
 */
 
 

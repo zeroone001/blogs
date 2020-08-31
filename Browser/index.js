@@ -1,3 +1,8 @@
+/**
+ * Description: 请输入文件描述
+ * Author: liuyongsheng
+ * Date: 2020-03-20 15:02:30
+*/
 /*
     https://juejin.im/post/5c64d15d6fb9a049d37f9c20#heading-38
     1, 跨标签页通信
@@ -46,6 +51,6 @@ GPU painting: 像素绘制页面
 */
 /*
     chrome 浏览器跨域 
-    命令： open -n /Applications/Google\ Chrome.app/ --args --disable-web-security  --user-data-dir=/Users/smzdm/MyChromeDevUserData/
+    命令： open -n /Applications/Google\ Chrome.app/ --args --disable-web-security  --user-data-dir=/Users/xxxx/MyChromeDevUserData/
 
 */
