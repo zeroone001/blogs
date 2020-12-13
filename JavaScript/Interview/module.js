@@ -36,10 +36,6 @@
 */
 /*
     函数防抖：将多次高频操作放在最后一次执行；
-
-
-
-
 */
 function debounce(fn, wait, immediate) {
     // body...
